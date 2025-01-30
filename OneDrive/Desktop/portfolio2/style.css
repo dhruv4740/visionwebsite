@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f 40%, #2a2a40 100%);
+    color: #ffffff;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(90deg, #444, #666);
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section Styling */
+section {
+    padding: 2em;
+    margin: 1.5em auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(40, 40, 60, 0.9);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease;
+}
+
+section h2 {
+    margin-bottom: 0.8em;
+    font-size: 2em;
+    color: #ff6f61;
+    border-bottom: 2px solid #ffcc80;
+    padding-bottom: 5px;
+}
+
+section p {
+    margin-bottom: 1.5em;
+}
+
+section a {
+    color: #42a5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #1e88e5;
+}
+
+/* Experience Cards */
+.experience-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Resume Button Styling */
+.resume-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #42a5f5, #66bb6a);
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #42a5f5;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background: linear-gradient(90deg, #444, #666);
+    color: #ffffff;
+    margin-top: 2em;
+    border-top: 4px solid #ffcc80;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc80;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #1e1e2f 40%, #2a2a40 100%);
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background: linear-gradient(90deg, #444, #666);
+}
+
+body.dark-mode section {
+    background: rgba(40, 40, 60, 0.9);
+    color: #ffffff;
+}
+
+body.dark-mode section h2 {
+    color: #ff6f61;
+    border-bottom: 2px solid #ffcc80;
+}
+
+body.dark-mode section a {
+    color: #42a5f5;
+}
+
+body.dark-mode section a:hover {
+    color: #1e88e5;
+}
+
+body.dark-mode footer {
+    background: linear-gradient(90deg, #444, #666);
+    color: #ffffff;
+}
+
+body.dark-mode footer a {
+    color: #ffeb3b;
+}
+
+body.dark-mode footer a:hover {
+    color: #ffcc80;
+}
+
+body.dark-mode .resume-button {
+    background: linear-gradient(90deg, #42a5f5, #66bb6a);
+}
+
+body.dark-mode .sidebar {
+    background: linear-gradient(180deg, #444, #666);
+}
+
+body.dark-mode .sidebar a {
+    color: #ffffff;
+}
+
+body.dark-mode .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
