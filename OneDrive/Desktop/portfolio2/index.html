@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruv Kothari's Website</title>
+    <title>Dhruv Kothari's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle Button -->
+    <!-- Dark Mode Toggle -->
     <button id="dark-mode-toggle" class="dark-mode-button" onclick="toggleDarkMode()">
-        <span id="dark-mode-icon" class="moon-icon">&#127769;</span>
+        <span id="dark-mode-icon" class="moon-icon">🌙</span>
     </button>
 
-    <!-- Header with Profile Picture -->
+    <!-- Header -->
     <header>
         <div class="header-content">
-            <img src="profile.jpg" alt="Dhruv Kothari" class="profile-pic">
-            <h1>Welcome to My Website</h1>
+            <h1>Dhruv Kothari</h1>
+            <p>BTech IT Student | Tech Enthusiast</p>
         </div>
         <nav>
             <ul>
@@ -38,33 +38,40 @@
             and cloud technologies, and I continuously strive to grow as a tech enthusiast.
         </p>
     </section>
-    
-    <!-- Experience Section with Cards -->
+
+    <!-- Experience Section -->
     <section id="experience">
-        <h2>Experience and Courses Completed</h2>
-        <div class="experience-cards">
-            <div class="card">
-                <h3>Team Vision KJSCE</h3>
-                <p>Selected as a Tech Team Member for Team Vision KJSCE.</p>
-            </div>
-            <div class="card">
-                <h3>Winter Internship</h3>
-                <p>Completed a Winter Internship with Team Vision KJSCE, focusing on Augmented Reality (AR) in the Software Department.</p>
-            </div>
-            <div class="card">
-                <h3>CS50T</h3>
-                <p>Completed the CS50T (Understanding Technology) Course by Harvard University.</p>
-            </div>
+        <h2>Experience</h2>
+        <div class="experience-group">
+            <h3>Team Vision KJSCE</h3>
+            <ul>
+                <li>Selected as a Tech Team Member for Team Vision KJSCE.</li>
+                <li>Completed a Winter Internship with Team Vision KJSCE, focusing on Augmented Reality (AR) in the Software Department.</li>
+            </ul>
+        </div>
+        <div class="experience-group">
+            <h3>Courses Completed</h3>
+            <ul>
+                <li>CS50T (Understanding Technology) by Harvard University.</li>
+                <li>CS50x (Introduction to Computer Science) by Harvard University (ongoing).</li>
+                <li>Google Cloud Course offered by GDG on campus.</li>
+            </ul>
+        </div>
+        <div class="experience-group">
+            <h3>AR/VR Development</h3>
+            <ul>
+                <li>Explored Unity for AR/VR development, focusing on basic coding and tutorials.</li>
+            </ul>
         </div>
     </section>
-    
+
     <!-- Resume Section -->
     <section id="resume">
         <h2>Resume</h2>
-        <a href="C:\Users\hp\OneDrive\Desktop\my-portfolio\resume\resume_general (1).pdf" download class="resume-button">Download My Resume</a>
+        <a href="resume.pdf" download class="resume-button">Download My Resume</a>
     </section>
 
-    <!-- Contact Section with Social Links -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:dhruvkothari13062006@gmail.com">dhruvkothari13062006@gmail.com</a></p>
@@ -77,7 +84,6 @@
     <!-- Footer -->
     <footer>
         <p>Created by Dhruv Kothari. All rights reserved.</p>
-        <p><a href="https://github.com/yourusername/my-portfolio" target="_blank">View on GitHub</a></p>
     </footer>
 
     <script src="interactive.js"></script>
